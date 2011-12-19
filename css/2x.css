@@ -75,6 +75,10 @@ table.forums {
 	font-size: 11px !important;
 }
 
+.foruminfo.L1 td {
+	background: yellow;
+}
+
 /* Bottom of the forums */
 .footer {
 	margin-top: 0px;
