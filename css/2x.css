@@ -51,17 +51,47 @@ body {
 	margin: 0px;
 	border: none;
 	width: 320px;
+	
 }
 
 #header {
 	width: 320px;
 	height: auto;
+	background-image: none;
 }
 
 .forumhead {
 	border-left: none;
 	border-right: none;
 }
+
+/* The header */
+
+#logo {
+	float: none;
+	display: block;
+	width: 320px;
+}
+
+#logo img {
+	width: 50%;
+}
+
+.navbarlink img {
+	display: none;
+}
+
+.navbarlink {
+	float: none;
+	margin: 0;
+	margin-right: 20px;
+	display: inline-block;
+}
+
+.navbarlink:nth-child(1), .navbarlink:nth-child(2) {
+	display: none;
+}
+
 
 /* HOMEPAGE */
 /* forum home tables */
@@ -75,8 +105,21 @@ table.forums {
 	font-size: 11px !important;
 }
 
-.foruminfo.L1 td {
-	background: yellow;
+.foruminfo.L1 td:first-child {
+	
+}
+
+table.forums .forumdescription, table.forums .viewing {
+	display: none;
+}
+
+/* Subforums */
+.subforum a.new {
+	margin: 0px;
+	padding: 0px;
+	border: none;
+
+	background: transparent;
 }
 
 /* Bottom of the forums */
