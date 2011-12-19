@@ -78,6 +78,7 @@ body {
 #header #breadcrumb {
 	margin: 0px;
 	height: auto;
+	padding: 7px 0 0 7px;
 }
 
 #navbarlinks {
@@ -122,6 +123,15 @@ table.forums {
 
 table.forums .forumdescription, table.forums .viewing {
 	display: none;
+}
+
+table.forums .forumbit_post {
+	border-left: none;
+	border-right: none;
+}
+
+table.forums .forumbit_post:last-child {
+	border-bottom: none !important;
 }
 
 /* Subforums */

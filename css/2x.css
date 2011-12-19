@@ -124,6 +124,15 @@ table.forums .forumdescription, table.forums .viewing {
 	display: none;
 }
 
+table.forums .forumbit_post {
+	border-left: none;
+	border-right: none;
+}
+
+table.forums .forumbit_post:last-child {
+	border-bottom: none;
+}
+
 /* Subforums */
 .subforum a.new {
 	margin: 0px;
