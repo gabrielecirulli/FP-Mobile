@@ -30,3 +30,61 @@ _____________________________________________________
 COLOURS 
 
 */
+
+html, body {
+	width: 320px;
+}
+
+body {
+	font-size: 11px;
+}
+
+/* Wrapper elements */
+/* Remove the content padding and set width */
+#content_pad {
+	margin: 0px;
+	width: 320px;
+}
+
+/* Header */
+.above_body {
+	margin: 0px;
+	border: none;
+	width: 320px;
+}
+
+#header {
+	width: 320px;
+	height: auto;
+}
+
+.forumhead {
+	border-left: none;
+	border-right: none;
+}
+
+/* HOMEPAGE */
+/* forum home tables */
+table.forums {
+	max-width: 320px;
+	width: 320px;
+	margin: 0px !important;
+}
+
+.forumbit_post .foruminfo .forumdata .forumtitle, .forumbit_nopost .forumbit_nopost .forumrow .forumtitle {
+	font-size: 11px !important;
+}
+
+/* Bottom of the forums */
+.footer {
+	margin-top: 0px;
+	width: 320px;
+}
+
+.below_body {
+	width: 320px;
+}
+
+center {
+	max-width: 320px;
+}
