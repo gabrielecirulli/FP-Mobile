@@ -1,43 +1,18 @@
-/* 2x 
-
-THIS STYLESHEET REPLICATES 2x.css FOR TESTING PURPOSES. WILL BE CHANGED.
-_________________________________________________
-
-320 and Up boilerplate extension
-Andy Clarke http://about.me/malarkey
-Version: 2
-URL: http://stuffandnonsense.co.uk/projects/320andup/
-License: http://creativecommons.org/licenses/MIT/
-_____________________________________________________
-
-1 ROOT
-2 HEADINGS
-3 TYPOGRAPHY
-4 LINKS
-5 FIGURES & IMAGES
-6 TABLES
-7 FORMS
-8 BANNER
-9 NAVIGATION
-10 CONTENT
-11 MAIN
-12 COMPLEMENTARY
-13 CONTENTINFO
-14 GLOBAL OBJECTS
-15 VENDOR-SPECIFIC 
-16 MODERNIZR
-17 TEMPLATE SPECIFICS
-
-COLOURS 
-
-*/
+/* 2x - For iPhone retina */
 
 html, body {
 	width: 320px;
+	min-width: 320px;
+	max-width: 320px;
+	overflow: hidden;
 }
 
 body {
 	font-size: 11px;
+}
+
+a, a:hover {
+	text-decoration: none !important;
 }
 
 /* Wrapper elements */
@@ -64,13 +39,7 @@ body {
 	padding-bottom: 10px;
 }
 
-.forumhead {
-	border-left: none;
-	border-right: none;
-}
-
 /* The header */
-
 #logo {
 	display: none;
 }
@@ -78,7 +47,11 @@ body {
 #header #breadcrumb {
 	margin: 0px;
 	height: auto;
-	padding: 7px 0 0 7px;
+	padding: 5px 0 0 7px;
+}
+
+#breadcrumb #lastelement {
+	font-weight: bold;
 }
 
 #navbarlinks {
@@ -107,18 +80,22 @@ body {
 
 /* HOMEPAGE */
 /* forum home tables */
+td.FrontPageForums {
+	display: block;
+}
+
 table.forums {
 	max-width: 320px;
 	width: 320px;
 	margin: 0px !important;
 }
 
-.forumbit_post .foruminfo .forumdata .forumtitle, .forumbit_nopost .forumbit_nopost .forumrow .forumtitle {
-	font-size: 11px !important;
+table.forums:first-child {
+	border-top: 1px solid #888;
 }
 
-.foruminfo.L1 td:first-child {
-	
+.forumbit_post .foruminfo .forumdata .forumtitle, .forumbit_nopost .forumbit_nopost .forumrow .forumtitle {
+	font-size: 11px !important;
 }
 
 table.forums .forumdescription, table.forums .viewing {
@@ -131,7 +108,22 @@ table.forums .forumbit_post {
 }
 
 table.forums .forumbit_post:last-child {
-	border-bottom: none !important;
+	border-bottom: none;
+}
+
+table.forums .LastPostAvatar {
+	display: none;
+}
+
+table.forums p.lastposttitle {
+	text-align: right;
+}
+
+
+.forumhead {
+	border-top: none;
+	border-left: none;
+	border-right: none;
 }
 
 /* Subforums */
@@ -144,15 +136,49 @@ table.forums .forumbit_post:last-child {
 }
 
 /* Bottom of the forums */
-.footer {
+#footer {
 	margin-top: 0px;
 	width: 320px;
+	font-size: 10px;
 }
 
-.below_body {
+#footer #content_pad {
+	width: 300px;
+}
+
+div#footer #fps {
+	font-size: 13px;
+}
+
+div#content_pad > center {
+	/* Hiding the footer stats, set display to block to make them show up */
+	display: none;
+	max-width: 300px;
+	width: 300px !important;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+div#content_pad > center > p:nth-child(1), div#content_pad > center > p:nth-child(2), div#content_pad > center > p:nth-child(3) {
+	/* Hiding those really pesky p tags used for spacing - really, don't do that */
+	display: none;
+}
+
+div.below_body {
+	padding: 5px 0;
+	background: #26F;
 	width: 320px;
+	margin: 0;
 }
 
-center {
-	max-width: 320px;
+div.below_body * {
+	color: white !important;
+}
+
+#footer_time {
+	padding: 0;
+}
+
+#footer_copyright, #footer_morecopyright {
+	display: none;
 }
