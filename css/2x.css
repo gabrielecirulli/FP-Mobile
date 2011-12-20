@@ -1,9 +1,9 @@
 /* 2x - For iPhone retina */
 
 html, body {
-	width: 320px;
-	min-width: 320px;
-	max-width: 320px;
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
 	overflow: hidden;
 }
 
@@ -19,21 +19,21 @@ a, a:hover {
 /* Remove the content padding and set width */
 #content_pad {
 	margin: 0px;
-	width: 320px;
+	width: 100%;
 }
 
 /* Header */
 .above_body {
 	margin: 0px;
 	border: none;
-	width: 320px;
+	width: 100%;
 	height: auto;
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(225,227,234,1))); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(225,227,234,1) 100%); /* Chrome10+,Safari5.1+ */
 }
 
 #header {
-	width: 320px;
+	width: 100%;
 	height: auto;
 	background-image: none;
 	padding: 4px 0 10px 0;
@@ -92,8 +92,8 @@ td.FrontPageForums {
 }
 
 table.forums {
-	max-width: 320px;
-	width: 320px;
+	max-width: 100%;
+	width: 100%;
 	margin: 0px !important;
 }
 
@@ -165,7 +165,7 @@ table.forums .forumhead h2 {
 div.below_body {
 	padding: 7px 0 2px 0;
 	background: #397bdf;
-	width: 320px;
+	width: 100%;
 	margin: 0;
 }
 
@@ -185,13 +185,13 @@ div.below_body * {
 /* Footer */
 div#footer {
 	margin-top: 0px;
-	width: 320px;
+	width: 100%;
 	font-size: 11px;
 	background: #397bdf;
 }
 
 div#footer #content_pad {
-	width: 300px;
+	width: 90%;
 	padding-bottom: 7px;
 }
 
@@ -203,8 +203,8 @@ div#footer #fps {
 div#content_pad > center {
 	/* Hiding the footer stats, set display to block to make them show up */
 	display: none;
-	max-width: 300px;
-	width: 300px !important;
+	max-width: 90%;
+	width: 90% !important;
 	margin: 0 auto;
 	margin-top: 10px;
 }
