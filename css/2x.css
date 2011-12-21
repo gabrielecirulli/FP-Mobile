@@ -120,14 +120,19 @@ table.forums tr.forumhead:last-child {
 
 .forumbit_post .foruminfo .forumdata .forumtitle a, .forumbit_nopost .forumbit_nopost .forumrow .forumtitle a {
 	font-size: 11px !important;
-	padding: 1px 2px;
+	padding: 1px 2px 2px 2px;
 	border-radius: 3px;
+	display: block;
 }
 
 .forumbit_post .foruminfo .forumdata .forumtitle a:hover, .forumbit_nopost .forumbit_nopost .forumrow .forumtitle a:hover,
 p.lastposttitle a:hover {
 	background: #2F75BA;
 	color: white;
+}
+
+.forumbit_post {
+	min-height: 44px;
 }
 
 p.lastposttitle {
@@ -195,13 +200,14 @@ table.forums p.lastposttitle {
 
 .forumbit_post .foruminfo .forumdata {
 	max-width: 90%;
-	display: inline-block !important;
 }
 
 .forumhead {
 	border-top: none;
 	border-left: none;
 	border-right: none;
+
+	height: 22px;
 
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6bb2f1), color-stop(100%,#397bdf)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, #6bb2f1 0%,#397bdf 100%); /* Chrome10+,Safari5.1+ */
