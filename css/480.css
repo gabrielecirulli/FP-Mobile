@@ -9,20 +9,32 @@ html, body {
 
 body {
 	font-size: 11px;
+	font-family: Tahoma, Arial, Verdana, Helvetica, sans-serif !important;
+}
+
+body * {
+	font-family: Tahoma, Arial, Verdana, Helvetica, sans-serif !important;
 }
 
 a, a:hover {
 	text-decoration: none !important;
 }
 
-/* Wrapper elements */
+/* ############################################################################### 
+ * Wrapper elements
+ * ###############################################################################
+ */
+
 /* Remove the content padding and set width */
 #content_pad {
 	margin: 0px;
 	width: 100%;
 }
 
-/* Header */
+/* ############################################################################### 
+ * Header 
+ * ###############################################################################
+ */
 .above_body {
 	margin: 0px;
 	border: none;
@@ -39,7 +51,6 @@ a, a:hover {
 	padding: 4px 0 10px 0;
 }
 
-/* The header */
 #logo {
 	display: none;
 }
@@ -49,12 +60,18 @@ a, a:hover {
 	height: auto;
 	padding: 5px 0 0 7px;
 	margin-bottom: 10px;
+	font-size: 11px;
 }
 
 #header #breadcrumb #lastelement {
 	font-weight: bold;
 	color: #333;
 	text-shadow: none;
+	padding-left: 11px;
+}
+
+#header #breadcrumb #lastelement > span a {
+	display: none;
 }
 
 #navbar-login {
@@ -90,8 +107,10 @@ a, a:hover {
 }
 
 
-/* HOMEPAGE */
-/* forum home tables */
+/* ############################################################################### 
+ * Forum home tables
+ * ###############################################################################
+ */
 td.FrontPageForums {
 	display: block;
 }
@@ -111,7 +130,7 @@ table.forums tr:last-child {
 }
 
 .above_body + table td.FrontPageForums:last-child table.forums:last-child tr:not(.forumhead):last-child {
-	border-bottom: 1px solid #3474AC !important;
+	border-bottom: none !important;
 }
 
 table.forums tr.forumhead:last-child {
@@ -133,6 +152,7 @@ p.lastposttitle a:hover {
 
 .forumbit_post {
 	min-height: 44px;
+	height: 44px;
 }
 
 p.lastposttitle {
@@ -180,7 +200,7 @@ table.forums .forumbit_post {
 	border-right: none;
 }
 
-table.forums .forumbit_post td.alt {
+td.alt {
 	background: #F3F7FC;
 }
 
@@ -207,15 +227,26 @@ table.forums p.lastposttitle {
 	border-left: none;
 	border-right: none;
 
+	height: auto;
+	min-height: 22px;
 	height: 22px;
+
+	box-sizing: border-box;
 
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6bb2f1), color-stop(100%,#397bdf)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(top, #6bb2f1 0%,#397bdf 100%); /* Chrome10+,Safari5.1+ */
 }
 
+.forumhead td {
+	padding: 0 8px;
+	box-sizing: border-box;
+}
+
 table.forums .forumhead h2 {
-	font-size: 13px;
+	padding: 0;
+	font-size: 11px;
 	text-shadow: 0px -1px 0px rgba(0,0,0,.3);
+	/*margin-left: 3px;*/
 }
 
 td.foruminfo {
@@ -224,7 +255,10 @@ td.foruminfo {
 	padding-left: 26px !important;
 }
 
-/* Subforums */
+/* ############################################################################### 
+ * Subforums
+ * ###############################################################################
+ */
 .subforum a.new {
 	margin: 0px;
 	padding: 0px;
@@ -233,12 +267,164 @@ td.foruminfo {
 	background: transparent;
 }
 
-/* Bottom of the forums */
+/* ############################################################################### 
+ * Thread listing page
+ * ###############################################################################
+ */
+#above_threadlist, #below_threadlist {
+	display: none;
+}
+
+.boxshadow {
+	-o-box-shadow: none !important;
+	-icab-box-shadow: none !important;
+	-khtml-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+div#threadlist div.boxshadow .threadlisthead {
+	font-size: 11px;
+	font-weight: bold;
+
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6bb2f1), color-stop(100%,#397bdf)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #6bb2f1 0%,#397bdf 100%); /* Chrome10+,Safari5.1+ */
+}
+
+div.boxshadow table#threads thead.threadlisthead tr {
+	min-height: 22px;
+	height: 22px;
+	border-top: 1px solid #4592D6;
+	border-bottom: 1px solid #4592D6;
+}
+
+div.boxshadow table#threads thead.threadlisthead td {
+	padding: 0 8px;
+	box-sizing: border-box;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, .3)
+}
+
+.sortarrow {
+	display: none;
+}
+
+div#threadlist div.boxshadow {
+	border: none;
+}
+
+div#threadlist div.boxshadow + hr {
+	display: none;
+}
+
+table#threads tr.threadbit td.alt {
+	background: #F3F7FC;
+}
+
+span.threadpagenav {
+	display: none;
+}
+
+h3.threadtitle a:not(:first-child) {
+	display: none;
+}
+
+table#threads tr.threadbit td {
+	border: none !important;
+}
+
+tr.threadbit {
+	border-bottom: 1px solid #ccc;
+	min-height: 44px;
+	height: 44px;
+}
+
+tr.threadbit:last-child { 
+	border-bottom: none;
+}
+
+table#threads tr.threadbit td.threadinfo h3.threadtitle > a {
+	font-size: 11px;
+}
+
+table#threads tr.threadbit td.threadinfo .author {
+	color: transparent;
+	margin: 0;
+	padding: 0;
+}
+
+table#threads tr.threadbit td.threadinfo .author :not(a) {
+	display: none;
+}
+
+td.threadreplies, td.threadviews, td.threadicon {
+	display: none;
+}
+
+table#threads tbody a {
+	padding: 1px 2px 2px 2px;
+	border-radius: 3px;
+}
+
+table#threads tbody a:hover {
+	background: #2F75BA !important;
+	color: white !important;
+}
+
+table#threads tr.threadbit td.threadinfo h3.threadtitle > a:first-child {
+	display: inline-block;
+}
+
+table#threads tr.threadbit td.threadinfo .newposts, table#threads tr.threadbit td.threadinfo .newposts:hover {
+	display: inline-block;
+	width: auto;
+	border-radius: 3px;
+	margin: 3px 0;
+	font-weight: bold;
+}
+
+table#threads tr.threadbit td.threadinfo .newposts:hover {
+	background: #2F75BA;
+	border: 1px solid #2F75BA;
+}
+
+table#threads tr.threadbit td.threadinfo .newposts img {
+	display: none;
+}
+
+table#threads tr.threadbit td.threadinfo .newposts a {
+	color: #275F97 !important;
+	background: transparent !important;
+	padding: 2px;
+}
+
+table#threads tr.threadbit td.threadinfo .newposts a:hover {
+	background: transparent;
+	color: white !important;
+}
+
+/*table#threads tr.threadbit td.threadinfo .newposts a::before, table#threads tr.threadbit td.threadinfo .newposts a::after {
+	content: " -";
+}*/
+
+.threaddetails {
+	display: none;
+}
+
+/* ############################################################################### 
+ * Bottom of the forums
+ * ###############################################################################
+ */
+div#bottom_box {
+	display: none;
+}
+
 div.below_body {
 	padding: 7px 0 2px 0;
 	background: #397bdf;
 	width: 100%;
 	margin: 0;
+	border-top: 1px solid #3474AC !important;
 }
 
 div.below_body * {
@@ -254,7 +440,10 @@ div.below_body * {
 	display: none;
 }
 
-/* Footer */
+/* ############################################################################### 
+ * Footer
+ * ###############################################################################
+ */
 div#footer {
 	margin-top: 0px;
 	width: 100%;
@@ -269,7 +458,7 @@ div#footer #content_pad {
 }
 
 div#footer #fps {
-	font-size: 13px;
+	font-size: 11px;
 	/* font */
 }
 
