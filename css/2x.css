@@ -324,7 +324,7 @@ span.threadpagenav {
 	display: none;
 }
 
-span.threadpagenav + a {
+h3.threadtitle a:not(:first-child) {
 	display: none;
 }
 
@@ -395,7 +395,7 @@ table#threads tr.threadbit td.threadinfo .newposts img {
 table#threads tr.threadbit td.threadinfo .newposts a {
 	color: #275F97 !important;
 	background: transparent !important;
-	padding: 1px;
+	padding: 2px;
 }
 
 table#threads tr.threadbit td.threadinfo .newposts a:hover {
