@@ -4,6 +4,7 @@ html, body {
 	width: auto !important;
 	min-width: 0 !important;
 	background: #ccc;
+	-webkit-text-size-adjust:none !important; -ms-text-size-adjust:none;
 }
 
 body {
