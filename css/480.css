@@ -4,7 +4,6 @@ html, body {
 	width: 100%;
 	min-width: 100%;
 	max-width: 100%;
-	overflow: hidden;
 }
 
 body {
@@ -325,7 +324,7 @@ span.threadpagenav {
 	display: none;
 }
 
-h3.threadtitle a:not(:first-child) {
+span.threadpagenav + a {
 	display: none;
 }
 
@@ -378,6 +377,7 @@ table#threads tr.threadbit td.threadinfo h3.threadtitle > a:first-child {
 table#threads tr.threadbit td.threadinfo .newposts, table#threads tr.threadbit td.threadinfo .newposts:hover {
 	display: inline-block;
 	width: auto;
+	padding: 1px;
 	border-radius: 3px;
 	margin: 3px 0;
 	font-weight: bold;
@@ -395,7 +395,7 @@ table#threads tr.threadbit td.threadinfo .newposts img {
 table#threads tr.threadbit td.threadinfo .newposts a {
 	color: #275F97 !important;
 	background: transparent !important;
-	padding: 2px;
+	padding: 1px;
 }
 
 table#threads tr.threadbit td.threadinfo .newposts a:hover {
