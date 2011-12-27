@@ -139,15 +139,12 @@ table.forums tr.forumhead:last-child {
 
 .forumbit_post .foruminfo .forumdata .forumtitle a, .forumbit_nopost .forumbit_nopost .forumrow .forumtitle a {
 	font-size: 11px !important;
-	padding: 1px 2px 2px 2px;
-	border-radius: 3px;
 	display: block;
 }
 
 .forumbit_post .foruminfo .forumdata .forumtitle a:hover, .forumbit_nopost .forumbit_nopost .forumrow .forumtitle a:hover,
 p.lastposttitle a:hover {
-	background: #2F75BA;
-	color: white;
+	color: #216BB5;
 }
 
 .forumbit_post {
@@ -159,40 +156,8 @@ p.lastposttitle {
 	margin-bottom: 2px;
 }
 
-p.lastposttitle a {
-	padding: 2px 2px;
-	border-radius: 3px;
-}
-
 table.forums .forumdescription, table.forums .viewing {
 	display: none;
-}
-
-table.forums .forumdata .subforums {
-	margin-top: 2px;
-}
-
-table.forums .forumdata .subforums ol {
-	margin: 0 !important;
-}
-
-table.forums .forumdata .subforums ol li {
-	display: list-item;
-	list-style: square inside;
-	color: #1A5691;
-}
-
-table.forums .forumdata .subforums a.new {
-	line-height: 1.5em;
-	font-size: 10px;
-	font-weight: bold;
-	color: #1A5691;
-	padding: 1px 2px;
-}
-
-table.forums .forumdata .subforums a.new:hover {
-	background: #2F75BA;
-	color: white;
 }
 
 table.forums .forumbit_post {
@@ -259,6 +224,32 @@ td.foruminfo {
  * Subforums
  * ###############################################################################
  */
+table.forums .forumdata .subforums {
+	margin-top: 2px;
+}
+
+table.forums .forumdata .subforums ol {
+	margin: 0 !important;
+}
+
+table.forums .forumdata .subforums ol li {
+	display: list-item;
+	list-style: square inside;
+	color: #1A5691;
+}
+
+table.forums .forumdata .subforums a.new {
+	line-height: 1.5em;
+	font-size: 10px;
+	font-weight: bold;
+	color: #1A5691;
+	/*padding: 1px 2px;*/
+}
+
+table.forums .forumdata .subforums a.new:hover {
+	color: #216BB5;
+}
+
 .subforum a.new {
 	margin: 0px;
 	padding: 0px;
@@ -361,14 +352,8 @@ td.threadreplies, td.threadviews, td.threadicon {
 	display: none;
 }
 
-table#threads tbody a {
-	padding: 1px 2px 2px 2px;
-	border-radius: 3px;
-}
-
 table#threads tbody a:hover {
-	background: #2F75BA !important;
-	color: white !important;
+	color: #216BB5 !important;
 }
 
 table#threads tr.threadbit td.threadinfo h3.threadtitle > a:first-child {
@@ -421,7 +406,7 @@ div#bottom_box {
 }
 
 div.below_body {
-	padding: 7px 0 2px 0;
+	padding: 4px 0 2px 0;
 	background: #397bdf;
 	width: 100%;
 	margin: 0;
@@ -447,6 +432,7 @@ div.below_body * {
  */
 div#footer {
 	margin-top: 0px;
+	padding: 0;
 	width: 100%;
 	font-size: 11px;
 	background: #397bdf;
